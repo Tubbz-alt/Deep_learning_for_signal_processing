@@ -1,6 +1,6 @@
 # Deep learning Systems
 
-## 1.2 Audio denoising using linear model
+## [1.2 Audio denoising using linear model](https://github.com/dipam7/Deep_learning_for_signal_processing/blob/master/02_linear_denoising.ipynb)
 
 ### Preprocessing
 - Read audio files
@@ -11,7 +11,7 @@
 ### Modeling
 The model structure is shown below
 
-![test](link to image)
+![test](https://github.com/dipam7/Deep_learning_for_signal_processing/blob/master/images/linear_denoising_model.png)
 
 ### Loss function and Optimizer
 
