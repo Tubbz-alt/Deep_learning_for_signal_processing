@@ -4,23 +4,23 @@
 
 In this notebook, we perform image classification on the classic MNIST dataset. The model consists of 5 hidden layers, each with 1024 units, followed by an output layer. The output of every layer goes through a ReLU and has a dropout of 0.2
 
-![test](![test](https://github.com/dipam7/Deep_learning_for_signal_processing/blob/master/images/MNIST_model.png)
+![test](https://github.com/dipam7/Deep_learning_for_signal_processing/blob/master/images/MNIST_model.png)
 
 In just 20 epochs, our model achieves an accuracy of 97.68% on the test set. The loss function used is Cross Entropy loss along with Adam's optimizer. Learning rate is set to 0.001.
 
 Once trained, we plot the best examples for every digit as detected by the model.
 
-![test](![test](https://github.com/dipam7/Deep_learning_for_signal_processing/blob/master/images/MNIST_best.png)
+![test](https://github.com/dipam7/Deep_learning_for_signal_processing/blob/master/images/MNIST_best.png)
 
 Finally we also use PCA and tSNE to reduce the dimensionlaity to 2 features and plot them. tSNE works better than PCA. We do this for the output of each layer of the network. 
 
 **PCA**
 
-![test](![test](https://github.com/dipam7/Deep_learning_for_signal_processing/blob/master/images/dim_pca.png)
+![test](https://github.com/dipam7/Deep_learning_for_signal_processing/blob/master/images/dim_pca.png)
 
 **tSNE**
 
-![test](![test](https://github.com/dipam7/Deep_learning_for_signal_processing/blob/master/images/dim_tsne.png)
+![test](https://github.com/dipam7/Deep_learning_for_signal_processing/blob/master/images/dim_tsne.png)
 
 
 
