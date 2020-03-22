@@ -55,14 +55,14 @@ Just like audio denoising using a linear model, in this notebook we do it using 
 
 ![test](https://github.com/dipam7/Deep_learning_for_signal_processing/blob/master/images/cnn_denoising_model.png)
 
-## [3.1 Network Compression using SVD]()
+## [3.1 Network Compression using SVD](https://github.com/dipam7/Deep_learning_for_signal_processing/blob/master/nbs/04_network_compression.ipynb)
 
-If we look at the architecture we used in [Image classification using a linear model]() we see that we used 5 layers with 1024 neurons each. 
+If we look at the architecture we used in [Image classification using a linear model](https://github.com/dipam7/Deep_learning_for_signal_processing/blob/master/01_MNIST_linear.ipynb) we see that we used 5 layers with 1024 neurons each. 
 
 ![test](https://github.com/dipam7/Deep_learning_for_signal_processing/blob/master/images/MNIST_model.png)
 
 This architecture manages to achieve 95% accuracy easily. However, it has a lot of parameters. In this notebook we compress the trained network using SVD. We use compression factors of [10, 20, 50, 100, 200] and check their corresponding accuracies. We see that we are able to maintain ~95% accuracy with around ~150 parameters.
 
-![test]((https://github.com/dipam7/Deep_learning_for_signal_processing/blob/master/images/svd_plot.png)
+![test](https://github.com/dipam7/Deep_learning_for_signal_processing/blob/master/images/svd_plot.png)
 
-We want to take this one step further. So we compress our network down to a compression factor of 20 and retrain our model to achieve 95% accuracy. And we successfully do so. This compressed network only uses 4% memory as compared to the originial network. Check the [notebook]() for details.
+We want to take this one step further. So we compress our network down to a compression factor of 20 and retrain our model to achieve 95% accuracy. And we successfully do so. This compressed network only uses 4% memory as compared to the originial network. Check the [notebook](https://github.com/dipam7/Deep_learning_for_signal_processing/blob/master/nbs/04_network_compression.ipynb) for details.
