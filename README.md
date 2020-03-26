@@ -66,3 +66,29 @@ This architecture manages to achieve 95% accuracy easily. However, it has a lot 
 ![test](https://github.com/dipam7/Deep_learning_for_signal_processing/blob/master/images/svd_plot.png)
 
 We want to take this one step further. So we compress our network down to a compression factor of 20 and retrain our model to achieve 95% accuracy. And we successfully do so. This compressed network only uses 4% memory as compared to the originial network. Check the [notebook](https://github.com/dipam7/Deep_learning_for_signal_processing/blob/master/nbs/04_network_compression.ipynb) for details.
+
+## [4.1 Variational autoencoders](https://github.com/dipam7/Deep_learning_for_signal_processing/blob/master/nbs/05_vae.ipynb)
+
+In this notebook, we train a variational autoencoder to generate a bunch of 7s. The input data looks like this:
+
+![test](https://github.com/dipam7/Deep_learning_for_signal_processing/blob/master/images/vae_ip.png)
+
+and we want to generate something similar by feeding random data into our variational autoencoder. The output should look as follows:
+
+![test](https://github.com/dipam7/Deep_learning_for_signal_processing/blob/master/images/vae_op.png)
+
+Variational autoencoders solve the limitations of autoencoders. Read this [amazing aritcle](https://towardsdatascience.com/intuitively-understanding-variational-autoencoders-1bfe67eb5daf) for more details.
+
+The architecture of our VAE looks as follows:
+
+![test](https://github.com/dipam7/Deep_learning_for_signal_processing/blob/master/images/vae_arch.png)
+
+Our encoder and decoder both consist of linear layers. We limit our latent dims to 4 so that we can see their individual effect. More on this later.
+
+We use Adam's optimizer and a learning rate of 1e-2. The loss graph is as shown.
+
+![test](https://github.com/dipam7/Deep_learning_for_signal_processing/blob/master/images/vae_loss.png)
+
+Finally, we can set a constant value for 3 dimensions, and change 1 dimension at a time to see its effect. Since only one dimension is different, it'll be responsible for the effects in the images. We expect 3 dimensions to generate straight 7s while the 4th one to show us rotation, blur, or any other effect that may have been added to the images.
+
+![test](https://github.com/dipam7/Deep_learning_for_signal_processing/blob/master/images/vae_dim.png)
