@@ -1,6 +1,6 @@
 # Deep learning For Signal Processing
 
-## [1.1 Image classification using linear model](https://github.com/dipam7/Deep_learning_for_signal_processing/blob/master/01_MNIST_linear.ipynb)
+## [1.1 Image classification using linear model](https://github.com/dipam7/Deep_learning_for_signal_processing/blob/master/nbs/01_MNIST_linear.ipynb)
 
 In this notebook, we perform image classification on the classic MNIST dataset. The model consists of 5 hidden layers, each with 1024 units, followed by an output layer. The output of every layer goes through a ReLU and has a dropout of 0.2
 
@@ -24,7 +24,7 @@ Finally we also use PCA and tSNE to reduce the dimensionlaity to 2 features and 
 
 
 
-## [1.2 Audio denoising using linear model](https://github.com/dipam7/Deep_learning_for_signal_processing/blob/master/02_linear_denoising.ipynb)
+## [1.2 Audio denoising using linear model](https://github.com/dipam7/Deep_learning_for_signal_processing/blob/master/nbs/02_linear_denoising.ipynb)
 
 ### Preprocessing
 - Read audio files
